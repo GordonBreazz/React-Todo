@@ -8,10 +8,15 @@ function App() {
     {id: 2, copmleted: false, title: 'Купить масло'},
     {id: 3, copmleted: false, title: 'Купить молоко'}
   ]
+
+  function toggleTodo(id){
+    console.log(id) 
+  }
+
   return (
     <div className="wrapper">
       <h1>Руководство по реакт</h1>
-      <TodoList todos = {todos}/>
+      <TodoList todos = {todos} onToggle={toggleTodo}/>
     </div>
   )
 }
