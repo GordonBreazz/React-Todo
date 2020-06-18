@@ -24,11 +24,19 @@ function App() {
     setTodos(todos.filter(todo => todo.id !== id))
   }
 
+  function addTodo(title) {    
+    setTodos(todos.concat([{
+      title,
+      id: Date.now,
+      completed: false
+    }]))
+  }
+
   return (
     <Context.Provider value={{removeTodo}}>
     <div className="wrapper">    
       <h1>Руководство по реакт</h1>
-      <AddTodo />
+      <AddTodo onCreate={addTodo}/>
       { todos.length ? (<TodoList todos = {todos} onToggle={toggleTodo}/>) : (<p>Нет задач</p>) } 
     </div>
     </Context.Provider>
