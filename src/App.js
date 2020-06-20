@@ -54,7 +54,7 @@ function App() {
   return (
     <Context.Provider value={{ removeTodo }}>
       <div  className="container">
-        <h1>Руководство по реакт</h1>
+        <h1>Реакт TODO</h1>
         <React.Suspense fallback={<Loader />}>
           <Modal />
           

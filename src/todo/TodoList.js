@@ -6,6 +6,7 @@ const styles ={
   ul: {
     listStyle: 'none',
     margin: 0,
+    marginTop: 30,
     padding: 0
   }  
 }
