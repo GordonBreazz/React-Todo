@@ -4,7 +4,17 @@ import Context from "../context"
 
 function TodoItem({ todo, index, onChange }) {
   //console.log('todo', todo)
+  
+  const okk = function(id, cls) {
+    // console.log(cls)
+    // cls.push('anim')    
+    removeTodo(id)
+    //console.log(cls)
+  }
   const { removeTodo } = useContext(Context)
+
+  
+
   let classes = ["todo"]
 
   if (todo.copmleted) classes.push("completed")
@@ -14,13 +24,13 @@ function TodoItem({ todo, index, onChange }) {
       <label>
         <input
           type="checkbox"
-          onChange={() => onChange(todo.id)}
+          onChange={() => onChange(todo.id,)}
           checked={todo.copmleted}
         />
         <span>{todo.title}</span>
         <i
           className="material-icons red-text waves-effect waves-light"
-          onClick={removeTodo.bind(null, todo.id)}
+          onClick={okk.bind(null,todo.id, classes)}
         >
           delete
         </i>

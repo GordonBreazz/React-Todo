@@ -33,6 +33,7 @@ code {
 
 .todo {
   margin-bottom: 1rem;
+  
 }
 
 .todo.completed span {
@@ -47,6 +48,7 @@ code {
   cursor: pointer;
   background: #f3f3f3;
   padding: 1rem;
+  
   
 }
 
@@ -63,6 +65,12 @@ code {
  
 }
 
+.anim {
+  visibility: hidden;
+  opacity: 0;
+
+  transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+}
 
 .lds-circle {
   display: inline-block;
