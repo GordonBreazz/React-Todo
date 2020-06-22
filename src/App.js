@@ -54,7 +54,7 @@ function App() {
   return (
     <Context.Provider value={{ removeTodo }}>
       <div  className="container">
-        <h1>Реакт TODO</h1>
+        <h1>REACT TODO</h1>
         <React.Suspense fallback={<Loader />}>
           <Modal />
           
@@ -68,7 +68,7 @@ function App() {
         {todos.length ? (
           <TodoList todos={todos} onToggle={toggleTodo} />
         ) : (
-          loading ? null : (<p>Нет задач</p>)
+          loading ? null : (<p>no task</p>)
         )}
       </div>
     </Context.Provider>

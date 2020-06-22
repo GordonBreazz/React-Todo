@@ -33,7 +33,7 @@ function AddTodo({ onCreate }) {
         
       </div>
       <button className="btn waves-effect waves-light btn-large" type="submit" name="action" >
-          Добавить задачу
+          Add your task
           <i className="material-icons right">send</i>
       </button>
     </form>
