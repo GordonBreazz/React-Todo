@@ -29,7 +29,7 @@ function AddTodo({ onCreate }) {
   return (
     <form  className="col s12" onSubmit={submitHandler}>
       <div className="input-field">
-        <input {...input.bind} id="first_name" placeholder="Ввдедите текст своей задачи"/>
+        <input {...input.bind} id="first_name" placeholder="Input text your task"/>
         
       </div>
       <button className="btn waves-effect waves-light btn-large" type="submit" name="action" >
